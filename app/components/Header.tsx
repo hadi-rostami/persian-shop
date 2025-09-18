@@ -60,7 +60,7 @@ export default function Header() {
         </div>
 
         <div className="navbar-end gap-3">
-          <a
+          <Link
             href="https://rubika.ir/@Persian__Bot"
             target="_blank"
             rel="nofollow noreferrer noopener"
@@ -68,7 +68,7 @@ export default function Header() {
             aria-label="کانال روبیکا"
           >
             کانال روبیکا <HiOutlineExternalLink />
-          </a>
+          </Link>
 
           <HeaderTheme />
         </div>

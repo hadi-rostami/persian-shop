@@ -40,6 +40,8 @@ export default function Plan({ plan, admin }: { plan: Plan; admin: string }) {
         <div className="mt-6">
           <Link
             href={admin}
+            target="_blank"
+            rel="nofollow noreferrer noopener"
             className={`btn ${
               !plan.badge && "btn-primary"
             } btn-block rounded-md`}
