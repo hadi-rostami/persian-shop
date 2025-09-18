@@ -23,7 +23,7 @@ export default function HomeHeroTextAnim() {
     <span
       className={`transition-text after:bg-base-100 after:border-green-600 after:border-l relative transition-opacity duration-300 ${
         fade ? "opacity-100" : "opacity-0"
-      } text-green-600`}
+      } text-success`}
     >
       {words[index]}
     </span>

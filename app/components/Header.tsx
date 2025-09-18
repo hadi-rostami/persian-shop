@@ -1,4 +1,3 @@
-
 import { HiOutlineExternalLink, HiMenuAlt1 } from "react-icons/hi";
 import { IoIosArrowBack } from "react-icons/io";
 
@@ -6,8 +5,6 @@ import Link from "next/link";
 import HeaderTheme from "./HeaderTheme";
 
 export default function Header() {
-  
-
   return (
     <header className="shadow-sm px-3 bg-base-100 font-regular">
       <nav className="navbar">
@@ -27,19 +24,6 @@ export default function Header() {
             >
               <li>
                 <Link href="/">صفحه اصلی</Link>
-              </li>
-              <li>
-                <details>
-                  <summary>خرید</summary>
-                  <ul className="p-2">
-                    <li>
-                      <Link href="/freebot">ربات رایگان</Link>
-                    </li>
-                    <li>
-                      <Link href="/vipbot">ربات پیشرفته</Link>
-                    </li>
-                  </ul>
-                </details>
               </li>
               <li>
                 <Link href="/about">درباره ما</Link>
@@ -66,23 +50,7 @@ export default function Header() {
                 صفحه اصلی
               </Link>
             </li>
-            <li role="none">
-              <details>
-                <summary role="menuitem">خرید</summary>
-                <ul className="p-2 shadow-2xl">
-                  <li role="none">
-                    <Link href="/freebot" className="min-w-28" role="menuitem">
-                      ربات رایگان
-                    </Link>
-                  </li>
-                  <li role="none">
-                    <Link href="/vipbot" className="min-w-28" role="menuitem">
-                      ربات پیشرفته
-                    </Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
+
             <li role="none">
               <Link href="/about" role="menuitem">
                 درباره ما

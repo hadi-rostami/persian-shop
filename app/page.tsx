@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import HomeHero from "./components/HomeHero";
+import HomeFeatures from "./components/HomeFeatures";
+import PricingPlans from "./components/PricingPlans";
 
 export const metadata: Metadata = {
   title: "ربات پرشین | بهترین و سریعترین ربات مدیریت گروه روبیکا",
@@ -35,6 +37,8 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <HomeFeatures />
+      <PricingPlans />
     </>
   );
 }

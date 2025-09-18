@@ -5,6 +5,9 @@
 
 
 @theme {
+
+  --color-main-green: #328e6e;
+
   --font-regular: "Vazirmatn-Regular", sans-serif;
   --font-black: "Vazirmatn-Black", sans-serif;
   --font-bold: "Vazirmatn-Bold", sans-serif;
@@ -32,3 +35,6 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}

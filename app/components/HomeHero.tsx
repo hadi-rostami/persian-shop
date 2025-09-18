@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HomeHeroTextAnim from "./HomeHeroTextAnim";
 
 export default function HomeHero() {
@@ -9,27 +10,25 @@ export default function HomeHero() {
           <span>ربات مدیریت گروه روبیکا</span>
         </h1>
 
-        <p className="my-5">
+        <p className="my-5 text-justify">
           با ربات ما می‌توانید گروه‌های روبیکا را به‌سادگی مدیریت کنید، اعضا را
           سرگرم کرده و از پیام‌های اضافی و اسپم‌ها راحت شوید. تجربه‌ای امن و
           خودکار برای همه اعضا!
         </p>
 
+
+        <p className="text-gray-400 mb-5">
+          <span className="text-orange-400">توجه:</span> ربات های رایگان قابلیت خیلی کمتری نصب به ربات پیشرفته دارند.
+        </p>
+
         <div className="flex gap-3">
-          <a
-            href="/freebot"
-            className="btn btn-success"
-            title="ربات رایگان روبیکا"
+          <Link
+            href="#PricingPlans"
+            className="btn shadow-sm btn-soft btn-success rounded-md"
+            title="ربات روبیکا"
           >
-            ربات رایگان
-          </a>
-          <a
-            href="/vipbot"
-            className="btn btn-soft"
-            title="ربات پیشرفته روبیکا"
-          >
-            ربات پیشرفته
-          </a>
+            دریافت ربات
+          </Link>
         </div>
       </div>
 
