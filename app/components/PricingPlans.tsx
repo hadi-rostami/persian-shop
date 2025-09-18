@@ -1,9 +1,7 @@
 import { plans } from "../data/config";
 import Plan from "./Plan";
-import { admins } from "../data/config";
-export default function PricingPlans() {
-  const currentAdmin = admins[Math.floor(Math.random() * admins.length)];
 
+export default function PricingPlans() {
   return (
     <div id="PricingPlans" className="p-4 font-regular mt-10">
       <div className="text-center mb-6">
@@ -18,7 +16,7 @@ export default function PricingPlans() {
 
       <div className="flex items-start gap-4 justify-evenly flex-wrap">
         {plans.map((plan) => (
-          <Plan admin={currentAdmin} plan={plan} key={plan.price} />
+          <Plan plan={plan} key={plan.price} />
         ))}
       </div>
     </div>

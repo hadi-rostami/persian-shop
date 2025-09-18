@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     title: "ربات مدیریت گروه روبیکا | مدیریت آسان گروه‌ها",
     description:
       "ربات هوشمند و خودکار برای مدیریت گروه‌های روبیکا؛ آسان، سریع و امن.",
-    url: "https://persian-bot-website.vercel.app/",
+    url: "https://persian-shop.vercel.app/",
     siteName: "ربات پرشین",
     images: [
       {
-        url: "https://persian-bot-website.vercel.app/images/logo.jpg",
+        url: "https://persian-shop.vercel.app/images/logo.jpg",
         width: 1200,
         height: 630,
         alt: "ربات مدیریت گروه روبیکا",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "ربات مدیریت گروه روبیکا | مدیریت آسان گروه‌ها",
     description:
       "ربات هوشمند و خودکار برای مدیریت گروه‌های روبیکا؛ آسان، سریع و امن.",
-    images: ["https://persian-bot-website.vercel.app/images/logo.jpg"],
+    images: ["https://persian-shop.vercel.app/images/logo.jpg"],
   },
 };
 

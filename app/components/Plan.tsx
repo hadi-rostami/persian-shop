@@ -2,8 +2,10 @@ import { IoMdCheckmark } from "react-icons/io";
 import type { Plan } from "../types";
 import { IoTimeOutline } from "react-icons/io5";
 import Link from "next/link";
+import { admins } from "../data/config";
 
-export default function Plan({ plan, admin }: { plan: Plan; admin: string }) {
+export default function Plan({ plan }: { plan: Plan }) {
+  const currentAdmin = admins[Math.floor(Math.random() * admins.length)];
   return (
     <div
       className={`card w-80 ${
@@ -39,7 +41,7 @@ export default function Plan({ plan, admin }: { plan: Plan; admin: string }) {
         </ul>
         <div className="mt-6">
           <Link
-            href={admin}
+            href={currentAdmin}
             target="_blank"
             rel="nofollow noreferrer noopener"
             className={`btn ${
