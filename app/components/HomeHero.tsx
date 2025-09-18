@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HomeHeroTextAnim from "./HomeHeroTextAnim";
+import Image from "next/image";
 
 export default function HomeHero() {
   return (
@@ -16,9 +17,9 @@ export default function HomeHero() {
           خودکار برای همه اعضا!
         </p>
 
-
         <p className="text-gray-400 mb-5">
-          <span className="text-orange-400">توجه:</span> ربات های رایگان قابلیت خیلی کمتری نصب به ربات پیشرفته دارند.
+          <span className="text-orange-400">توجه:</span> ربات های رایگان قابلیت
+          خیلی کمتری نصب به ربات پیشرفته دارند.
         </p>
 
         <div className="flex gap-3">
@@ -33,7 +34,14 @@ export default function HomeHero() {
       </div>
 
       <div className="flex-1">
-        <img src="/images/home-hero.png" alt="تصویر ربات مدیریت گروه روبیکا" />
+       <Image
+          src="/images/home-hero.png"
+          alt="تصویر ربات مدیریت گروه روبیکا"
+          width={949}    
+          height={592}   
+          className="w-full h-auto" 
+          priority
+        />
       </div>
     </div>
   );

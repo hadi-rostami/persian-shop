@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import HomeHero from "./components/HomeHero";
 import HomeFeatures from "./components/HomeFeatures";
 import PricingPlans from "./components/PricingPlans";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "ربات پرشین | بهترین و سریعترین ربات مدیریت گروه روبیکا",
@@ -34,11 +35,33 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ربات پرشین",
+    url: "https://persian-shop.vercel.app/",
+    description:
+      "ربات پرشین؛ ربات هوشمند مدیریت گروه‌های روبیکا با امکانات کامل و سریع.",
+    logo: "https://persian-shop.vercel.app/images/logo.jpg",
+    founder: {
+      "@type": "Person",
+      name: "هادی رستمی",
+      role: "سازنده و برنامه‌نویس اصلی",
+      url: "https://persian-shop.vercel.app/about",
+    },
+  };
+
   return (
     <>
       <HomeHero />
       <HomeFeatures />
       <PricingPlans />
+
+      <Script
+        id="ld-json-about"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }
