@@ -12,6 +12,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/images/logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="pq9VdDu44_pEjuJkLDxf-unBVaZxFVqFleORsnUjaTo"
+        />
       </head>
       <body>
         <Header />
